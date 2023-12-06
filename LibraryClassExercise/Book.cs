@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LibraryClassExercise
+﻿namespace LibraryClassExercise
 {
     internal class Book
     {
@@ -14,31 +8,33 @@ namespace LibraryClassExercise
         public string cover;
         public string ficOrNofic;
         public Author author;
-        
-        
+
+
         public Book(string Title, int Pages, string ReleaseDate, bool Cover, bool genre, Author authorInput)
         {
             title = Title;
             pages = Pages;
             releaseDate = ReleaseDate;
+
             if (Cover)
             {
-                cover = "Hard Cover"; 
+                cover = "Hard Cover";
             }
-            else 
+            else
             {
-                cover = "Soft Cover"; 
+                cover = "Soft Cover";
             }
-            if (genre) 
+
+            if (genre)
             {
                 ficOrNofic = "Fiction";
             }
-            else 
-            { 
-                ficOrNofic = "Non-Fiction"; 
+            else
+            {
+                ficOrNofic = "Non-Fiction";
             }
-            
-            authorInput = author;
+
+            author = authorInput;
         }
     }
 }
